@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Assignment 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">HCI Assignment 2</h1>
+        </header>
+
+        <form id="dataForm">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="technology">Category of Technology:</label>
+            <select id="technology" name="technology">
+                <option value="dataScience">Data Science</option>
+                <option value="machineLearning">Machine Learning</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+            <fieldset>
+                <legend>Frameworks:</legend>
+                <input type="radio" id="option1" name="options" value="option1">
+                <label for="option1">Tensorflow</label>
+                <input type="radio" id="option1" name="options" value="option1">
+                <label for="option1">Pytorch</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Libraries:</legend>
+                <input type="checkbox" id="option2" name="options" value="option2">
+                <label for="option2">Matplotlib</label>
+                <input type="checkbox" id="option2" name="options" value="option2">
+                <label for="option2">Pandas</label>
+            </fieldset>
+            <br>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <table>
+            <caption>Technologies Used in Data Science and Machine Learning Workspace</caption>
+            <tr>
+                <th>Category</th>
+                <th>Technology</th>
+                <th>Creator</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Libraries</td>
+                <td colspan="1">Pandas</td>
+                <td>Wes McKinney</td>
+                <td>Fast, powerful, flexible and easy to use open source data analysis and manipulation tool</td>
+            </tr>
+            <tr>
+                <td colspan="1">Matplotlib</td>
+                <td>John D. Hunter</td>
+                <td>Library for creating static, animated, and interactive visualizations</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Frameworks</td>
+                <td colspan="1">Keras-Tensorflow</td>
+                <td>François Chollet</td>
+                <td>Connected API to high productive interface focuses on deep learning problems</td>
+            </tr>
+            <tr>
+                <td colspan="1">Scikit learn</td>
+                <td>David Cournapeau</td>
+                <td>Simple and efficient tools for predictive data analysis and machine learning</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
